@@ -7,13 +7,13 @@
 }
 
 :root {
-    --cor-primaria: #000000;
+    background-image: linear-gradient(to top, #16222A,#3e98c5); 
     --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
+    --cor-terciaria: #00d0ff;
     --cor-hover: #272727;
 
-    /* --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif; */
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
 }
 *{
     margin: 0;
@@ -25,6 +25,9 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: 'DejaVu Sans Light', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav {
     display: flex;
@@ -45,15 +48,15 @@ li {
 }
 
 .link-menu:hover {
-    color: #ffffff;
+    color: #00557c;
     transition: 0.2s;
 }
 
 .link-menu {
     text-decoration: none;
-    color: #22D4FD;
+    color: #ffffff;
     font-weight: bold;
-    font-family: 'DejaVu Sans Light', sans-serif; 
+    font-family:var(--fonte-primaria)
 }
 
 .meu-nome {
@@ -82,13 +85,13 @@ li {
     width: 110%;
     height: 105%;
     border-radius: 5px;
-    box-shadow: 0 0 0 3px #22d5fdba; /* cor e tamanho da sombra */
+    box-shadow: 0 0 0 3px #ffffff; /* cor e tamanho da sombra */
     z-index: -50; /* para colocar a sombra atrás da imagem */
 }
 
 .fotodaLu {
     border: 3px solid #ffffff;
-    background-color: black;
+    background-color: 40b7bb;
     padding: 15px;
     border-radius: 5px;
 
@@ -102,7 +105,8 @@ li {
     justify-content: space-between;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 815px;
+    margin-left: -100px;
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -122,8 +126,11 @@ li {
 }
 
 .apresentacao__conteudo__texto{
+    font-family:monospace;
     font-size: 1.5rem;
+    
     text-align: justify;
+    color: #ffff;
 }
 
 .apresentacao__links{  
@@ -157,71 +164,4 @@ li {
     transition: 0.2s;
 }
 
-.conteudo 
-{
-    background-color: #000000;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    
-}
 
-.conteudo h2 {  
-    color: #22D4FD;
-    font-size: 80px;
-    font-family:Georgia;
-    text-align: center;
-    
-    
-}
-
-.card {
-    background-color: #000000;
-    height: 365px;
-    width: 335px;
-    border-radius: 20px;
-    padding: 20px 35px;
-    text-align: center;
-    
-    
-    
-}
-
-.logo {
-    height: 200px;
-    
-}
-
-.novo-ícone {
-    height: 180px;
-    margin-top: 27px;
-
-   
-    
-}
-.Cursos {
-    color: #ffff;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    
-    
-    
-    
-}
-
-.conteudo-projetos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-.rodape{
-    color: var(--cor-primaria);
-    background-image: linear-gradient(to right, white,#9cdfee);
-    padding: 10px;
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 800;
-}
